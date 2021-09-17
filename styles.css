@@ -1,3 +1,155 @@
-h1{
-    color: #0065FC;
+body{
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* En-tête */
+.header{
+    display: flex;
+    max-width: 1340px;
+    margin: auto;
+    /* background-color: goldenrod; */
+}
+.nav-items{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo{
+    height: 100px;
+    line-height: 125px;
+}
+.logo img{
+    width: 90px;
+}
+
+.navbar{
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+}
+.navbar ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.navbar li a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+.navbar li{
+    list-style: none;
+    width: 300px;
+    text-align: center;
+}
+.nav-active{
+    border-top: solid #0065fc 2px;
+}
+.nav-active a{
+    color: #0065fc;
+}
+.nav-non-active a{
+    color: #1f1f1f;
+}
+
+.suscribe {
+    width: 135px;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+}
+.suscribe a{
+    width: 135px;
+    text-align: center;
+    color: #0065fc;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* En-tête */
+
+.container{
+    display: flex;
+    max-width: 1340px;
+    margin: auto;
+}
+
+/* Recherche */
+
+.container-search{
+    display: block;
+    max-width: 1340px;
+    margin: auto;
+    /* background-color: red; */
+}
+.filtres{
+    display: flex;
+    align-items: center;
+}
+.filtre-item{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 50px;
+    border: #d9d9d9 solid 2px;
+    min-width: 150px;
+}
+.filtre-item-logo{
+    background-color: #deebff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filtre-item-logo i{
+    color: #0065fc;
+}
+.filtre-item-titre{
+    margin: auto;
+}
+.filtre-item-titre h3{
+    margin: 0;
+}
+
+.info{
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+}
+.logo-info{
+    width: 25px;
+    height: 25px;
+    border: #dbdbdb solid 1px;
+    border-radius: 50%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-info i{
+    color: #0065fc;
+    font-size: 12px;
+}
+.info p{
+    margin: 0;
+    padding-left: 10px;
 }
