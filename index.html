@@ -17,8 +17,8 @@
             <!-- navigation -->
             <nav class="navbar">
                 <ul>
-                    <li class="nav-active"><a href="#hebergement">Hébergements</a></li>
-                    <li class="nav-non-active"><a href="#activites">Activités</a></li>
+                    <li><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
             <!-- lien vers la page inscription -->
@@ -30,47 +30,51 @@
 
     <!-- section recherche -->
     <section class="container-search">
-        <div>
+        <div class="search">
             <h2>Trouver votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <form action="">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text">
-            <button type="submit">Rechercher</button>
+        <form action="" class="input">
+            <div class="map-logo">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <input type="text" placeholder="Marseille, France" class="input-text">
+            <button class="submit" type="submit">Rechercher</button>
         </form>
         <div class="filtres">
-            <h3>Filtres</h3>
-            <div class="filtre-item">
-                <div class="filtre-item-logo">
-                    <i class="fas fa-money-bill-wave"></i>
+            <h3 class="filtre-titre">Filtres</h3>
+            <div class="items">
+                <div class="filtre-item item-economique">
+                    <div class="filtre-item-logo">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="filtre-item-titre ">
+                        <h3>Économique</h3>
+                    </div>
                 </div>
-                <div class="filtre-item-titre">
-                    <h3>Économique</h3>
+                <div class="filtre-item item-familial">
+                    <div class="filtre-item-logo logo-familial">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="filtre-item-titre">
+                        <h3>Familial</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="filtre-item">
-                <div class="filtre-item-logo">
-                    <i class="fas fa-child"></i>
+                <div class="filtre-item item-romantique">
+                    <div class="filtre-item-logo">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="filtre-item-titre">
+                        <h3>Romantique</h3>
+                    </div>
                 </div>
-                <div class="filtre-item-titre">
-                    <h3>Familial</h3>
-                </div>
-            </div>
-            <div class="filtre-item">
-                <div class="filtre-item-logo">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <div class="filtre-item-titre">
-                    <h3>Romantique</h3>
-                </div>
-            </div>
-            <div class="filtre-item">
-                <div class="filtre-item-logo">
-                    <i class="fas fa-dog"></i>
-                </div>
-                <div class="filtre-item-titre">
-                    <h3>Animaux autorisés</h3>
+                <div class="filtre-item item-animaux">
+                    <div class="filtre-item-logo">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <div class="filtre-item-titre">
+                        <h3>Animaux autorisés</h3>
+                    </div>
                 </div>
             </div>
         </div>
