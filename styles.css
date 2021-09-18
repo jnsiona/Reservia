@@ -63,6 +63,7 @@ p{
     text-align: center;
 }
 .navbar li:hover{
+    transition: .2s;
     border-top: solid #0065fc 2px;
 }
 
@@ -138,6 +139,11 @@ p{
     color: white;
     background-color: #0065fc;
 }
+.submit:hover{
+    background-color: #0154cf;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
 .filtres{
     display: flex;
@@ -175,6 +181,11 @@ p{
 }
 .filtre-item-logo i{
     color: #0065fc;
+}
+.filtre-item-logo:hover{
+    border: #0065fc solid 3px;
+    transition: 0.2s;
+    cursor: pointer;
 }
 .filtre-item-titre{
     margin: auto;
@@ -224,4 +235,280 @@ p{
 .info p{
     margin: 0;
     padding-left: 10px;
+}
+
+/* Recherche */
+
+/* hebergement */
+
+.hebergement{
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.hebergement-zone{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 30px;
+}
+.hebergement-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.hebergement-card article{
+    background-color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: white solid 4px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.hebergement-card article:hover{
+    margin-top: 0;
+    border-bottom: #0065fc solid;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+.hebergement-zone img{
+    height: 100px;
+    width: 230px;
+    border-radius: 20px 20px 0 0;
+}
+.hebergement-info{
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.hebergement-info:hover{
+    border-bottom: black solid 2px;
+    transition: 0.1s ease-out;
+}
+.hebergement-descrpition{
+    padding: 10px;
+    height: 60px;
+}
+.hebergement-descrpition a{
+    text-decoration: none;
+}
+.hebergement-descrpition h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: black;
+}
+.hebergement-descrpition p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.note-hebergement i{
+    font-size: 10px;
+    color: #d9d9d9;
+}
+
+.populaire{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 30px;
+    width: 55%;
+}
+.populaire-titre{
+    display: flex;
+    justify-content: space-between;
+}
+.populaire-titre i{
+    align-self: center;
+    font-size: 20px;
+}
+.populaire-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.populaire-card article{
+    background-color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: white solid 4px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    width: 100%;
+}
+.populaire-card article:hover{
+    padding-top: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    border-bottom: #0065fc solid;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+.populaire-card img{
+    height: 135px;
+    width: 120px;
+    border-radius: 20px 0 0 20px;
+}
+.populaire-description{
+    padding: 15px;
+    height: 60px;
+}
+.populaire-description h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: black;
+}
+.populaire-description a{
+    text-decoration: none;
+}
+.populaire-description p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.note-populaire i{
+    margin-top: 55px;
+    font-size: 10px;
+    color: #d9d9d9;
+}
+
+/* hebergement */
+
+/* activites */
+
+.activites{
+    display: block;
+    padding-bottom: 60px;
+}
+.activites-colonnes{
+    display: flex;
+}
+.activites h2{
+    margin-bottom: 20px;
+}
+.activites-colonnes h3{
+    padding-left: 20px;
+}
+
+.colonne-1{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.colonne-1 article:hover{
+    box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
+    transition: .5s ease-out;
+    cursor: pointer;
+}
+.colonne-1-div{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.colonne-1-activite-card-1{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.colonne-1-activite-card-1 img{
+    height: 380px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+.colonne-1-activite-card-2{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.colonne-1-activite-card-2 img{
+    height: 180px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+.colonne-1-activite-card-3{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.colonne-1-activite-card-3 img{
+    height: 110px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.colonne-2{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.colonne-2 article:hover{
+    box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
+    transition: .5s ease-out;
+    cursor: pointer;
+}
+.colonne-2-div{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.colonne-2-activite-card-1{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.colonne-2-activite-card-1 img{
+    height: 380px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+.colonne-2-activite-card-2{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.colonne-2-activite-card-2 img{
+    height: 180px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+.colonne-2-activite-card-3{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.colonne-2-activite-card-3 img{
+    height: 110px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* activites */
+
+/* footer */
+
+.footer{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-colonne{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.footer a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
 }
