@@ -251,6 +251,11 @@ p{
     flex-wrap: wrap;
     padding-bottom: 30px;
 }
+.hebergement-card a{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
 .hebergement-card article{
     background-color: white;
     margin-bottom: 15px;
@@ -262,7 +267,6 @@ p{
     margin-top: 0;
     border-bottom: #0065fc solid;
     transition: .3s ease-out;
-    cursor: pointer;
 }
 .hebergement-zone img{
     height: 100px;
@@ -323,6 +327,12 @@ p{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.populaire-card a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100%;
+}
 .populaire-card article{
     background-color: white;
     margin-bottom: 15px;
@@ -339,7 +349,6 @@ p{
     margin-top: 0;
     border-bottom: #0065fc solid;
     transition: .3s ease-out;
-    cursor: pointer;
 }
 .populaire-card img{
     height: 135px;
@@ -351,6 +360,11 @@ p{
 .populaire-description{
     padding: 15px;
     height: 60px;
+}
+.note-populaire{
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
 }
 .populaire-description h3{
     margin-top: 0;
@@ -387,6 +401,10 @@ p{
 .activites-colonnes h3{
     padding-left: 20px;
 }
+.activites-colonnes a{
+    text-decoration: none;
+    color: black;
+}
 
 .colonne-1{
     width: 650px;
@@ -397,7 +415,6 @@ p{
 .colonne-1 article:hover{
     box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
     transition: .5s ease-out;
-    cursor: pointer;
 }
 .colonne-1-div{
     display: flex;
@@ -525,7 +542,14 @@ p{
 
 /* RESPONSIVE */
 
-@media (max-width:768px) {
+@media (max-width:330px) {
+
+    .info p{
+        line-height: 17px;
+    }
+    .logo-info{
+        height: 23px;
+    }
     /* header */
 
     .header{
@@ -608,6 +632,9 @@ p{
         padding: 0 0 30px 0;
         width: 100%;
     }
+    .note-populaire{
+        height: 10px;
+    }
 
     .hebergement{
         width: 100%;
@@ -625,7 +652,229 @@ p{
         width: 100%;
     }
     .hebergement-zone img{
+        width: 98%;
+    }
+
+    /* hebergement */
+
+    /* activites */
+
+    .activites{
+        padding-bottom: 20px;
         width: 100%;
+    }
+    .activites-colonnes{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .colonne-1{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-right: 0;
+    }
+    .colonne-2{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0;
+    }
+    .colonne-1-div{
+        width: 100%;
+    }
+    .colonne-2-div{
+        width: 100%;
+    }
+
+    .colonne-1-activite-card-1{
+        height: 185px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .colonne-1-activite-card-1 img{
+        height: 130px;
+        width: 100%;
+    }
+    .colonne-1-activite-card-2{
+        height: 185px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .colonne-1-activite-card-2 img{
+        height: 130px;
+        width: 100%;
+    }
+    .colonne-1-activite-card-3{
+        height: 185px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .colonne-1-activite-card-3 img{
+        height: 130px;
+        width: 100%;
+    }
+    
+    .colonne-2-activite-card-1{
+        height: 185px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .colonne-2-activite-card-1 img{
+        height: 130px;
+        width: 100%;
+    }
+    .colonne-2-activite-card-2{
+        height: 185px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .colonne-2-activite-card-2 img{
+        height: 130px;
+        width: 100%;
+    }
+    .colonne-2-activite-card-3{
+        height: 185px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .colonne-2-activite-card-3 img{
+        height: 130px;
+        width: 100%;
+    }
+
+    /* activites */
+
+    /* footer */
+
+    .footer{
+        width: 100%;
+    }
+    .footer-colonne{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        flex-wrap:wrap;
+        max-width: 90%;
+    }
+    
+}
+
+@media (min-width:330px) and (max-width:768px) {
+
+    .info p{
+        line-height: 17px;
+    }
+    .logo-info{
+        height: 23px;
+    }
+    /* header */
+
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .navbar{
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    .nav-items{
+        flex-direction: column-reverse;
+    }
+    .navbar li{
+        border-bottom: solid #f2f2f2 2px;
+        width: 100%;
+    }
+    .navbar li:hover{
+        transition: .2s;
+        border-top: none;
+        border-bottom: solid #0065fc 2px;
+    }
+
+    .subscribe{
+        align-self: flex-end;
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+    }
+
+    /* header */
+
+    .input-text{
+        width: 80%;
+    }
+    .submit{
+        width: 50px;
+        border-radius: 15px;
+    }
+
+    .submit h3{
+        display: none;
+    }
+    .submit i{
+        display: block;
+    }
+
+    /* filtre */
+
+    .filtres{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .items{
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+    }
+    .filtre-item{
+        margin-bottom: 15px;
+    }
+
+    /* filtre */
+
+    /* hebergement */
+
+    .hebergement h2{
+        margin-top: 30px;
+    }
+
+    .populaire{
+        background-color: #f2f2f2;
+        border-radius: 0;
+        margin-left: 0;
+        padding: 0 0 30px 0;
+        width: 100%;
+    }
+    .note-populaire{
+        height: 60px;
+    }
+
+    .hebergement{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergement-zone{
+        background-color: white;
+        border-radius: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .hebergement-card article{
+        width: 100%;
+    }
+    .hebergement-zone img{
+        width: 98%;
     }
 
     /* hebergement */
@@ -752,6 +1001,10 @@ p{
         height: 180px;
     }
 
+    .note-populaire{
+        height: 110px;
+    }
+
     .hebergement{
         width: 100%;
         display: flex;
@@ -768,7 +1021,7 @@ p{
         width: 48%;
     }
     .hebergement-zone img{
-        width: 100%;
+        width: 97.5%;
         height: 200px;
     }
 
