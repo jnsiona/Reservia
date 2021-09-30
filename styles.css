@@ -132,7 +132,7 @@ p{
     cursor: pointer;
     transition: 0.3s;
 }
-.submit i{
+.submit-2{
     display: none;
 }
 
@@ -544,6 +544,10 @@ p{
 
 @media (max-width:330px) {
 
+    .logo{
+        margin-left: 5%;
+    }
+
     .info p{
         line-height: 17px;
     }
@@ -588,14 +592,14 @@ p{
     /* header */
 
     .submit{
-        width: 50px;
-        border-radius: 15px;
-    }
-
-    .submit h3{
         display: none;
     }
-    .submit i{
+    .submit-2{
+        width: 50px;
+        border-radius: 0 15px 15px 0;
+        border: none;
+        background-color: #0065fc;
+        color: white;
         display: block;
     }
 
@@ -769,6 +773,10 @@ p{
 
 @media (min-width:330px) and (max-width:768px) {
 
+    .logo{
+        margin-left: 5%;
+    }
+
     .info p{
         line-height: 17px;
     }
@@ -820,14 +828,14 @@ p{
         width: 80%;
     }
     .submit{
-        width: 50px;
-        border-radius: 15px;
-    }
-
-    .submit h3{
         display: none;
     }
-    .submit i{
+    .submit-2{
+        width: 50px;
+        border-radius: 0 15px 15px 0;
+        border: none;
+        background-color: #0065fc;
+        color: white;
         display: block;
     }
 
@@ -882,7 +890,7 @@ p{
         width: 100%;
     }
     .hebergement-zone img{
-        width: 98%;
+        min-width: 98%;
     }
 
     /* hebergement */
@@ -1107,4 +1115,10 @@ p{
         max-width: 95%;
     }
 
+}
+
+@media (max-width:305px){
+    .note-2{
+        height: 10px;
+    }
 }
